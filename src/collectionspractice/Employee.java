@@ -7,7 +7,7 @@ public class Employee {
     private String firstName;
     private String ssn;
 
-    public Employee(String lastName, String firstName, String ssn) {
+    public Employee(String firstName, String lastName, String ssn) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.ssn = ssn;
@@ -62,9 +62,8 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" + "lastName=" + lastName + ", firstName=" + firstName + ", ssn=" + ssn + '}';
+        //return "Employee{" + "lastName=" + lastName + ", firstName=" + firstName + ", ssn=" + ssn + '}';
+        return firstName + ", " + lastName + ", " + ssn;
     }
 
-
-    
 }
